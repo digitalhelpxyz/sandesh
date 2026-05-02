@@ -1,36 +1,234 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>Delete Account - Sandesh Messenger</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Delete Account - Sandesh Messenger</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: auto;
+      padding: 30px 20px;
+      background: #fff;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #0b57d0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .note {
+      background: #eef5ff;
+      padding: 14px;
+      border-left: 4px solid #0b57d0;
+      margin: 18px 0;
+      border-radius: 4px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 22px;
+      padding: 14px;
+      background: #0b57d0;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0847ad;
+    }
+
+    .secondary {
+      background: #e9eef7;
+      color: #0b57d0;
+      margin-top: 10px;
+    }
+
+    .secondary:hover {
+      background: #dce7f9;
+    }
+
+    a {
+      color: #0b57d0;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Delete Your Account - Sandesh Messenger</h1>
 
-```
-<p>If you want to delete your account and associated data from Sandesh Messenger, follow the steps below:</p>
+<div class="container">
 
-<h2>Steps to Delete Account</h2>
-<ul>
-    <li>Open the Sandesh Messenger app</li>
-    <li>Go to Settings</li>
-    <li>Tap on "Delete Account"</li>
-</ul>
+  <h1>Delete Account</h1>
 
-<p>If you are unable to access the app, you can request account deletion by contacting us:</p>
-<p>Email: digitalhelpxyz@gmail.com</p>
+  <p>
+    This page is for users of <strong>Sandesh Messenger</strong> who want to request
+    deletion of their app account and associated data.
+  </p>
 
-<h2>Data Deletion</h2>
-<p>When you request account deletion, the following data will be deleted:</p>
-<ul>
-    <li>Your phone number</li>
-    <li>Your profile information</li>
-    <li>Your messages and chat history</li>
-</ul>
+  <div class="note">
+    <strong>Important:</strong> After account deletion, your profile information,
+    phone number, user ID, messages, and other associated data may be permanently deleted
+    where technically possible, except data that must be retained for legal, security,
+    fraud prevention, or dispute resolution purposes.
+  </div>
 
-<h2>Data Retention</h2>
-<p>All data will be permanently deleted within 7 days of your request.</p>
-```
+  <h2>Request Account or Data Deletion</h2>
+
+  <form id="deleteForm">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" placeholder="Enter your full name" required />
+
+    <label for="phone">Registered Phone Number</label>
+    <input type="tel" id="phone" placeholder="+91XXXXXXXXXX" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Enter your email address" required />
+
+    <label for="requestType">Request Type</label>
+    <select id="requestType" required>
+      <option value="">Select request type</option>
+      <option value="Delete my Sandesh Messenger account and associated data">
+        Delete my account and associated data
+      </option>
+      <option value="Delete certain data without deleting my account">
+        Delete certain data only
+      </option>
+      <option value="Request information about my stored data">
+        Request information about my stored data
+      </option>
+    </select>
+
+    <label for="message">Additional Details</label>
+    <textarea id="message" placeholder="Write any additional details here..."></textarea>
+
+    <button type="submit">Submit Deletion Request</button>
+  </form>
+
+  <button class="secondary" onclick="sendDirectEmail()">Send Email Manually</button>
+
+  <h2>What Data May Be Deleted</h2>
+  <ul>
+    <li>Account profile information</li>
+    <li>Registered phone number</li>
+    <li>User ID or account identifier</li>
+    <li>Messages and other in-app content, where technically possible</li>
+    <li>App activity and related user-generated data</li>
+  </ul>
+
+  <h2>Processing Time</h2>
+  <p>
+    We aim to process deletion requests within <strong>30 days</strong>.
+    Some data may be retained if required by law, security, fraud prevention,
+    abuse prevention, or legitimate business purposes.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    You can also contact us directly at:
+    <br />
+    <a href="mailto:digitalhelpxyz@gmail.com">digitalhelpxyz@gmail.com</a>
+  </p>
+
+  <div class="footer">
+    © 2026 Sandesh Messenger. All rights reserved.
+  </div>
+
+</div>
+
+<script>
+  const supportEmail = "digitalhelpxyz@gmail.com";
+
+  document.getElementById("deleteForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const fullName = document.getElementById("fullName").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const requestType = document.getElementById("requestType").value;
+    const message = document.getElementById("message").value.trim();
+
+    const subject = encodeURIComponent("Sandesh Messenger - Account/Data Deletion Request");
+
+    const body = encodeURIComponent(
+      "Hello Sandesh Messenger Support,\n\n" +
+      "I want to submit the following request:\n\n" +
+      "Request Type: " + requestType + "\n" +
+      "Full Name: " + fullName + "\n" +
+      "Registered Phone Number: " + phone + "\n" +
+      "Email Address: " + email + "\n\n" +
+      "Additional Details:\n" + (message || "Not provided") + "\n\n" +
+      "Please process this request as per your Privacy Policy.\n\n" +
+      "Thank you."
+    );
+
+    window.location.href = "mailto:" + supportEmail + "?subject=" + subject + "&body=" + body;
+  });
+
+  function sendDirectEmail() {
+    const subject = encodeURIComponent("Sandesh Messenger - Account/Data Deletion Request");
+    const body = encodeURIComponent(
+      "Hello Sandesh Messenger Support,\n\n" +
+      "I want to request deletion of my Sandesh Messenger account/data.\n\n" +
+      "Registered Phone Number:\n" +
+      "Email Address:\n" +
+      "Request Type:\n" +
+      "Additional Details:\n\n" +
+      "Thank you."
+    );
+
+    window.location.href = "mailto:" + supportEmail + "?subject=" + subject + "&body=" + body;
+  }
+</script>
 
 </body>
 </html>
