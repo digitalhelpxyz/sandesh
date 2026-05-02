@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service - Sandesh Messenger</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+      background: #fff;
+    }
+    h1, h2 {
+      color: #0b57d0;
+    }
+    h1 {
+      text-align: center;
+    }
+    a {
+      color: #0b57d0;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Terms of Service</h1>
+    <p><strong>Effective Date:</strong> May 2, 2026</p>
+
+    <p>
+      This is an agreement between you or the entity that you represent
+      (“You” or “Your”) and <strong>Digital Help XYZ</strong> (“we”, “our” or “us”),
+      the provider of <strong>Sandesh Messenger</strong> (the “Application”),
+      setting forth the terms and conditions governing your use of the Application.
+    </p>
+
+    <h2>Acceptance of Terms</h2>
+    <p>
+      By using Sandesh Messenger, you agree to these Terms. If you do not agree,
+      please do not use the Application.
+    </p>
+
+    <h2>User Registration Obligations</h2>
+    <p>
+      To use the Application, you may need to register using your mobile phone number.
+      You agree to provide true, accurate, current and complete information.
+      You also agree to receive SMS or phone calls containing verification codes
+      for account registration and login.
+    </p>
+
+    <h2>Updates</h2>
+    <p>
+      We may update the Application from time to time to add, remove, or improve
+      features. You may be required to install updates to continue using the Application.
+    </p>
+
+    <h2>Restrictions on Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the Application for illegal, harmful, abusive, or fraudulent activity.</li>
+      <li>Send spam, bulk messages, automated messages, or unwanted communications.</li>
+      <li>Impersonate another person or misrepresent your identity.</li>
+      <li>Upload or share content that is illegal, obscene, defamatory, hateful, or harmful.</li>
+      <li>Reverse engineer, modify, decompile, or attempt to access the source code of the Application.</li>
+      <li>Use the Application in a way that infringes intellectual property or privacy rights.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      The Application may use third-party services such as OTP verification,
+      cloud storage, analytics, or other service providers. Your use of such services
+      may also be governed by their respective terms and privacy policies.
+    </p>
+
+    <h2>Content</h2>
+    <p>
+      You are solely responsible for the content you upload, send, receive, store,
+      or share through the Application. You confirm that you have the right to use
+      and share such content.
+    </p>
+    <p>
+      You retain ownership of your content. However, you grant us a limited license
+      to process, transmit, store, and display such content only as necessary to
+      operate and provide the Application.
+    </p>
+
+    <h2>Personal Information and Privacy</h2>
+    <p>
+      Your personal information is handled according to our Privacy Policy.
+      By using the Application, you agree to our collection and use of information
+      as described in the Privacy Policy.
+    </p>
+
+    <h2>Account Security</h2>
+    <p>
+      You are responsible for keeping your device and account secure. If you suspect
+      unauthorized access to your account, please contact us immediately at
+      <a href="mailto:digitalhelpxyz@gmail.com">digitalhelpxyz@gmail.com</a>.
+    </p>
+
+    <h2>Indemnification</h2>
+    <p>
+      You agree to indemnify and hold harmless Digital Help XYZ from any claims,
+      damages, losses, liabilities, or expenses arising from your use of the
+      Application, violation of these Terms, or violation of any law or third-party rights.
+    </p>
+
+    <h2>Limitation of Liability</h2>
+    <p>
+      To the maximum extent permitted by law, Digital Help XYZ shall not be liable
+      for any indirect, incidental, special, consequential, or punitive damages,
+      including loss of data, profits, or business interruption arising from your
+      use of the Application.
+    </p>
+
+    <h2>Disclaimer of Warranties</h2>
+    <p>
+      The Application is provided on an “AS IS” and “AS AVAILABLE” basis.
+      We do not guarantee that the Application will be uninterrupted, secure,
+      error-free, or free from harmful components.
+    </p>
+
+    <h2>Suspension and Termination</h2>
+    <p>
+      We may suspend or terminate your account if you violate these Terms,
+      misuse the Application, engage in illegal activity, or if required by law.
+      Termination may result in loss of access to the Application and deletion of data.
+    </p>
+
+    <h2>Intellectual Property</h2>
+    <p>
+      Sandesh Messenger, its name, logo, design, features, and related materials
+      are owned by Digital Help XYZ. You may not use our branding without permission.
+    </p>
+
+    <h2>Arbitration</h2>
+    <p>
+      Any dispute arising out of or relating to these Terms shall be resolved
+      in accordance with the Arbitration and Conciliation Act, 1996, or its amendments.
+      The arbitration shall be conducted in India.
+    </p>
+
+    <h2>Modification of Terms</h2>
+    <p>
+      We may modify these Terms at any time. Continued use of the Application after
+      changes means you accept the updated Terms.
+    </p>
+
+    <h2>Contact Us</h2>
+    <p>
+      If you have any questions about these Terms, please contact us at:
+      <br />
+      <a href="mailto:digitalhelpxyz@gmail.com">digitalhelpxyz@gmail.com</a>
+    </p>
+
+    <div class="footer">
+      © 2026 Sandesh Messenger. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
